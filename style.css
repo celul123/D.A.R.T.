@@ -16,6 +16,8 @@ body{
 
 .top{
     background-image: url("assets/top.png");
+    background-repeat: no-repeat;
+    background-size: cover;
     
 }
 
@@ -162,7 +164,10 @@ li{
 .bottom{
     background-image: url(assets/bottom.png);
     margin-top: 8rem;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
+
 a{
     color: #FFCC6D;
     

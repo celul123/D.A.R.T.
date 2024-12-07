@@ -16,7 +16,7 @@ body{
 .top{
     background-image: url("assets/top.png");
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
     background-attachment: fixed;
 }
     

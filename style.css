@@ -18,6 +18,8 @@ body{
     background-image: url("assets/top.png");
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed;
+}
     
 }
 
@@ -166,6 +168,8 @@ li{
     margin-top: 8rem;
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed;
+}
 }
 
 a{

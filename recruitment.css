@@ -229,9 +229,14 @@ a{
 /* Mobil ve küçük ekranlar için düzenlemeler */
 @media (max-width: 768px) {
     body {
-      font-size: 90%; /* Daha küçük metin boyutu */
+      font-size: 80%; /* Daha küçük metin boyutu */
     }
   
+    .top{
+        background-size:auto;
+        background-attachment: fixed;
+    }
+
     .navbar {
       flex-direction: column; /* Navbar'ı dikey hizala */
       align-items: flex-start;
@@ -245,14 +250,14 @@ a{
     }
   
     .navbar .right {
-      gap: 2rem; /* Menü öğeleri arasındaki boşluğu azalt */
+      gap: 1.5rem; /* Menü öğeleri arasındaki boşluğu azalt */
       padding-top: 0;
       justify-content: center;
       width: 100%;
     }
   
     .navbar .right a {
-      font-size: 1.1rem;
+      font-size: 1rem;
     }
   
     .questions {
@@ -278,11 +283,11 @@ a{
     }
   
     .grid {
-      grid-template-columns: 1fr; /* Tek sütun düzeni */
+      grid-template-columns: 1fr; 
       grid-template-rows: auto;
       row-gap: 3rem;
       column-gap: 0;
-      width: 90%; /* Izgara genişliğini daralt */
+      width: 90%; /
     }
   
     .divisions {
@@ -291,11 +296,11 @@ a{
     }
   
     .d {
-      align-items: center; /* Kartları ortala */
+      align-items: center; 
     }
   
     .icons {
-      flex-direction: column; /* Sosyal medya ikonlarını dikey hizala */
+      flex-direction: row; 
       gap: 1rem;
       padding-bottom: 2rem;
     }
@@ -311,8 +316,9 @@ a{
       padding: 0.5rem 1rem;
     }
   
-    .bottom {
-      margin-top: 4rem; /* Alt bölümü daralt */
+    .bottom{
+       margin-top: 4rem;
+       background-size: auto;
     }
   }
   

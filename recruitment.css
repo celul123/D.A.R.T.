@@ -254,7 +254,7 @@ a{
     }
   
     .navbar .right {
-      gap: 1.5rem; /* Menü öğeleri arasındaki boşluğu azalt */
+      gap: 1.5rem; 
       padding-top: 0;
       justify-content: center;
       width: 100%;
@@ -332,7 +332,7 @@ a{
     .bottom{
        margin-top: 4rem;
        background-image: none;
-       background-color: #2B0916;
+       background-color: #1A020C;
     }
   }
   

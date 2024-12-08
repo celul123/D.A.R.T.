@@ -254,8 +254,8 @@ a{
   
     .navbar .right {
       gap: 1.5rem; 
-      padding-top: 0.5;
-      padding-bottom: 0.5;
+      padding-top: 0.5rem;
+      padding-bottom: 0.5rem;
       justify-content: center;
       width: 100%;
       background-color: #1A020C;

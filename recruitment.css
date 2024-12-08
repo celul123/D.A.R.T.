@@ -233,8 +233,7 @@ a{
     }
   
     .top{
-        background-size:auto;
-        background-attachment: fixed;
+        background-image: none;
     }
 
     .navbar {
@@ -242,6 +241,11 @@ a{
       align-items: flex-start;
       gap: 1.5rem;
       padding: 1rem;
+    }
+    
+    .navbar .left{
+        padding-top: 1rem;
+        background-color: #2B0916;
     }
   
     .navbar .left img {
@@ -259,6 +263,10 @@ a{
     .navbar .right a {
       font-size: 1rem;
     }
+
+    navbar .right a:hover {
+        font-size: 1rem;
+      }
   
     .questions {
       padding-top: 4rem;
@@ -293,6 +301,7 @@ a{
     .divisions {
       margin-top: 2rem;
       flex-direction: column;
+      transition-delay: 0.5s;
     }
   
     .d {
@@ -318,7 +327,8 @@ a{
   
     .bottom{
        margin-top: 4rem;
-       background-size: auto;
+       background-image: none;
+       background-color: #2B0916;
     }
   }
   

@@ -420,13 +420,13 @@ a{
   .top{
     background-image:  url("assets/image(8)1.png");
     background-attachment: fixed;
-    background-position:center;
+    
   }
 
   .bottom{
     background-image:  url("assets/image(10)1.png");
     background-attachment: fixed;
-    background-position: center;
+    
   }
 
 

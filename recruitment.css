@@ -309,7 +309,7 @@ a{
   
     .top{
         background-image:  url("assets/image_1_mobile_slim.png");
-        
+        background-attachment: fixed;
         
     }
     .navbar {
@@ -396,6 +396,7 @@ a{
        padding-top: 2rem;
        background-image: url("assets/image_2_mobile_slim.png");
        background-size: cover;
+       background-attachment: fixed;
     }
 
     .menu-button {

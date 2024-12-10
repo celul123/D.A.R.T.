@@ -308,8 +308,9 @@ a{
     }
   
     .top{
-        background-image:  url("assets/image_1_mobile_slim.png");
+        background-image:  url("assets/image(8)1.png");
         background-attachment: fixed;
+        background-position: center;
         
     }
     .navbar {
@@ -393,10 +394,9 @@ a{
     }
   
     .bottom{
-       padding-top: 2rem;
-       background-image: url("assets/image_2_mobile_slim.png");
-       background-size: cover;
-       background-attachment: fixed;
+      background-image:  url("assets/image(10)1.png");
+      background-attachment: fixed;
+      background-position: center;
     }
 
     .menu-button {
@@ -413,4 +413,21 @@ a{
     }
 
     
+}
+
+@media (max-width: 768px) {
+
+  .top{
+    background-image:  url("assets/image(8)1.png");
+    background-attachment: fixed;
+    background-position:center;
+  }
+
+  .bottom{
+    background-image:  url("assets/image(10)1.png");
+    background-attachment: fixed;
+    background-position: center;
+  }
+
+
 }

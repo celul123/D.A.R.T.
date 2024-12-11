@@ -418,13 +418,13 @@ a{
 @media (max-width: 768px) {
 
   .top{
-    background-image:  url("assets/image(11).png");
+    background-image:  url("assets/image(10).png");
     background-size: contain;
     -webkit-background-size: contain;
     }
 
   .bottom{
-    background-image:  url("assets/image(11).png");
+    background-image:  url("assets/image(10).png");
     background-size: contain;
     -webkit-background-size: contain;
   }

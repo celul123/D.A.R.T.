@@ -419,13 +419,14 @@ a{
 
   .top{
     background-image:  url("assets/image(11)-min.png");
-    
-    -webkit-background-size: contain;
+    background-size: cover;
+    -webkit-background-size: cover;
     }
 
   .bottom{
     background-image:  url("assets/image(11)-min.png");
-    -webkit-background-size: contain;
+    background-size: cover;
+    -webkit-background-size: cover;
   }
 
 

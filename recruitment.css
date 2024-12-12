@@ -419,14 +419,16 @@ a{
 
   .top{
     background-image:  url("assets/image(11)-min.png");
-    background-size: cover;
-    -webkit-background-size: cover;
+    background-size: contain;
+    -webkit-background-size: contain;
+    background-attachment: scroll;
     }
 
   .bottom{
     background-image:  url("assets/image(11)-min.png");
-    background-size: cover;
-    -webkit-background-size: cover;
+    background-size: contain;
+    -webkit-background-size: contain;
+    background-attachment: scroll;
   }
 
 

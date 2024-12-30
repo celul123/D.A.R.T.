@@ -1,0 +1,660 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body{
+    font-family: "Roboto Slab", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    background-color: black;
+    font-weight: 600;
+    
+  }
+  .top{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    
+  }
+  
+  .navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 8rem;
+    padding-left: 7rem;
+  }
+  
+  .navbar .left img{
+    width: 100px;
+    height: 100px;
+  }
+  
+  .navbar .left{
+    padding-top: 3rem;
+  }
+  
+  .navbar .right{
+    padding-top: 1.8rem;
+    display: flex;
+    align-items: center;
+    gap: 6rem;
+    
+  }
+  
+  .navbar .right a{
+    color: white;
+    text-decoration: none;
+    font-size: 1.3rem;
+  }
+  
+  .navbar .right a:hover{
+    color: #FFCC6D;
+    text-decoration: none;
+    font-size: 1.3rem;
+  }
+  .menu-button {
+    position: fixed;
+    z-index: 10;
+    top: 2rem; 
+    right: 1.25rem; 
+    background-color: transparent;
+    color: white;
+    font-size: 1.5rem;
+    padding: 0.3rem 0.3rem; 
+    border: none;
+    cursor: pointer;
+    border-radius: 0.3125rem; 
+    display: none; 
+  }
+  
+  .menu-button:hover {
+    color: #FFCC6D;
+  }
+  
+  .sidebar {
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    gap:1rem;
+    position: fixed;
+    top: 0;
+    right: -15.625rem; 
+    width: 15.625rem; 
+    height: 100%;
+    background-color: black;
+    color: white;
+    padding: 1rem;
+    transition: right 0.3s ease;
+    overflow-y: auto;
+    display: none;
+  }
+  
+  .sidebar a {
+    font-size: 1rem;
+    text-decoration: none;
+    color: white;
+    margin: 0.5rem 0; 
+    padding-top: 1rem;
+    padding-left: 1rem; 
+  }
+  
+  .sidebar a:hover {
+    color: #FFCC6D;
+  }
+  
+  
+  .sidebar.open {
+    right: 0; 
+  }
+  
+  
+  main {
+    padding: 5rem;
+    background-color: #000000;
+  }
+  .fade-in {
+    opacity: 0;
+    transform: translateX(100%); 
+    transition: transform 1s ease-out, opacity 1s ease-out;
+}
+
+.fade-in.animate {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+  .faq-container {
+    max-width: 5000px;
+    margin: 50px auto;
+    margin-left: 5rem; 
+    margin-right: 5rem;
+}
+
+   .intro {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  .intro h1 {
+    margin-top: -40px;
+    font-size: 3.5rem;
+    color: #FFCC6D;
+  }
+
+  .intro p {
+    font-size: 1.5rem;
+    text-align: center;
+    color: #888;
+  }
+  .spacer {
+    margin: 50px;
+  }
+  .spacer1 {
+    margin: 70px;
+  }
+  strong {
+    color:#FFCC6D;
+  }  
+
+.faq-row {
+    display: flex; 
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.faq-item {
+    flex: 0 0 48%; 
+    border: 3px solid;
+    padding: 40px;
+    box-sizing: border-box;
+}
+
+.question {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.question h2 {
+    color:white;
+    font-size: 2rem;
+    line-height: 3rem;
+    margin: 0;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.icon {
+    width: 50px;  /* Set a fixed size for the icon */
+    height: 50px; /* Set a fixed size for the icon */
+    border-radius: 50%; /* Makes the icon container circular */
+    padding: 10px; /* Space around the icon */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.icon img {
+    max-width: 150%;   
+    max-height: 150%; 
+    object-fit:contain; 
+}
+
+.toggle-btn {
+    background-color: #fff;
+    color: #000;
+    border: none;
+    font-size: 18px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.toggle-btn:hover {
+    background-color: #888;
+}
+
+/* Answers Hidden by Default */
+.answer {
+    display: none;
+    margin-top: 10px;
+    color: white;
+    line-height: 1.9rem;
+    font-size: 1.2rem;
+    border-left: 3px ;
+}
+.ending {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.ending h2 {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+}
+
+.ending p {
+  font-size: 1.5rem;
+  color: #888;
+  margin-bottom: 20px;
+}
+.faq-item.active .answer {
+    display: block;
+    transition: height 300ms ease, opacity 300ms ease;
+}
+
+.faq-item.active .toggle-btn {
+  transition: height 300ms ease, opacity 300ms ease;
+  transform: rotate(45deg); /* Rotate the button when active */
+}
+
+.icons{
+  margin-top: 5rem;
+  justify-content: center;
+  text-align: center;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  gap:15rem;
+  padding-bottom: 4rem;
+}
+
+.icons img{
+  width: 2.3rem;
+  height: 2.3rem;
+  opacity: 0.7;
+  transition-duration: 200ms;
+}
+
+.icons img:hover{
+  width: 2.33rem;
+  height: 2.33rem;
+  opacity: 1;
+}
+
+.copyright{
+  color: white;
+  width: 100%;
+  display: flex;
+  padding-top: 0.2rem;
+  padding-bottom: 1rem;
+  font-size: 1rem;
+  font-weight: 400;
+  padding-left: 2rem;
+}
+
+@media (max-width: 768px){
+  body {
+    font-size: 70%; 
+  }
+
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); 
+    backdrop-filter: blur(3px); 
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    z-index: 9;
+  }
+
+  .overlay.visible {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .top {
+      background-attachment: fixed;
+  }
+
+  .navbar {
+    padding-left: 1rem;
+    padding-bottom: 0rem;
+  }
+
+  .navbar .left {
+      padding-top: 0.5rem;
+  }
+
+  .navbar .left img {
+    width: 55px;
+    height: 55px;
+  }
+
+  .navbar a {
+    display: none;
+  }
+
+  main {
+    padding: 2rem; 
+  }
+
+  .faq-container {
+    flex-direction: column;
+    max-width: 2000px;
+    margin: 10px 10px;
+    margin-left: 1rem; 
+    margin-right: 2rem;
+}
+   /* Intro Section */
+   .intro {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  .intro h1 {
+    margin-top: -20px;
+    font-size: 2rem;
+  }
+
+  .intro p {
+    font-size: 0.8rem;
+    text-align: center;
+  }
+  .spacer {
+    margin: 20px;
+  }
+  .spacer1 {
+    margin: 25px;
+  }
+
+/* Rows */
+.faq-row {
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+/* Individual Questions */
+.faq-item {
+    flex: 0 0 30%; 
+    border: 3px solid;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.question {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.question h2 {
+    line-height: 1.8rem;
+    font-size: 1rem;
+    margin: 0;
+    letter-spacing: 1px;
+}
+.icon {
+    width: 40px;  
+    height: 40px; 
+    padding: 8px; 
+
+}
+
+.icon img {
+    max-width: 100%;   
+    max-height: 100%; 
+    object-fit:contain; 
+}
+
+.toggle-btn {
+    border: none;
+    font-size: 18px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: transform 0.3ms ease;
+}
+
+
+.answer {
+    line-height: 1.5rem;
+    display: none;
+    margin-top: 10px;
+    font-size: 0.8rem;
+    border-left: 3px ;
+}
+.ending {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.ending h2 {
+  font-size: 0.8rem;
+  margin-bottom: 10px;
+}
+
+.ending p {
+  font-size: 0.8rem;
+
+  margin-bottom: 20px;
+}
+
+  .icons {
+    flex-direction: row;
+    gap: 2rem;
+    padding-top: 0.5rem;
+    padding-bottom: 1.5rem;
+  }
+
+  .icons img {
+    width: 1.8rem;
+    height: 1.8rem;
+  }
+
+  .copyright {
+    font-size: 0.8rem;
+    text-align: center;
+    padding: 0.3rem 0.8rem;
+  }
+
+  .menu-button {
+    display: block;
+  }
+
+  .sidebar {
+    display: flex;
+    width: 10rem; /* Narrower sidebar */
+  }
+
+  .sidebar.open {
+    right: 0;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1180px){
+  body {
+    font-size: 80%; 
+  }
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); 
+    backdrop-filter: blur(3px); 
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    z-index: 9;
+  }
+
+  .overlay.visible {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .top {
+    background-attachment: fixed;
+  }
+
+  .navbar {
+    padding-left: 1.5rem;
+    padding-bottom: 0.5rem;
+  }
+
+  .navbar .left {
+      padding-top: 0.8rem;
+  }
+
+  .navbar .left img {
+    width: 70px; /* Smaller logo size */
+    height: 70px;
+  }
+
+  .navbar a {
+    display: none;
+  }
+
+  main {
+    padding: 4rem 4rem; 
+  }
+
+  .faq-container {
+    max-width: 3000px;
+    margin: 20px 20px;
+    margin-left: 3rem; 
+    margin-right: 3rem;
+}
+   /* Intro Section */
+   .intro {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .intro h1 {
+    margin-top: -20px;
+    font-size: 2.5rem;
+  }
+
+  .intro p {
+    font-size: 1.1rem;
+    text-align: center;
+    margin-bottom: 63px;
+  }
+  .spacer {
+    margin: 35px;
+  }
+  .spacer1 {
+    margin: 40px;
+  }
+
+/* Rows */
+.faq-row {
+    margin-bottom: 30px;
+}
+
+/* Individual Questions */
+.faq-item {
+    flex: 0 0 50%; 
+    border: 3px solid;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.question {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.question h2 {
+    color:white;
+    line-height: 2.1rem;
+    font-size: 1.2rem;
+    margin: 0;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.icon {
+    width: 40px;  
+    height: 40px; 
+    padding: 8px; 
+
+}
+
+.icon img {
+    max-width: 120%;  
+    max-height: 120%; 
+    object-fit:contain; 
+}
+
+.toggle-btn {
+
+    border: none;
+    font-size: 18px;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+/* Answers Hidden by Default */
+.answer {
+    display: none;
+    margin-top: 10px;
+    font-size: 1rem;
+    border-left: 3px ;
+}
+.ending {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.ending h2 {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+}
+
+.ending p {
+  font-size: 1.1rem;
+  margin-bottom: 80px;
+}
+
+
+  .icons {
+    flex-direction: row;
+    gap: 6rem;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+  }
+
+  .icons img {
+    width: 2rem;
+    height: 2rem;
+  }
+
+  .copyright {
+    font-size: 0.9rem;
+    text-align: center;
+    padding: 0.5rem 1rem;
+  }
+
+  .menu-button {
+    display: block;
+  }
+
+  .sidebar {
+    display: flex;
+    width: 12rem; 
+  }
+
+  .sidebar.open {
+    right: 0;
+  }
+}

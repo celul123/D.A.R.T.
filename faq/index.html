@@ -11,137 +11,107 @@
 </head>
 
 <body>
-    <!-- Overlay for Sidebar -->
     <div class="overlay" id="overlay"></div>
-    <!-- Menu Button -->
     <button class="menu-button" id="menu-button">☰</button>
-    <!-- Sidebar -->
-    <div class="sidebar" id="sidebar">
-        <a href="#home">HOME</a>
-        <a href="#about">ABOUT</a>
-        <a href="#recruitment">RECRUITMENT</a>
-        <a href="#FAQ">FAQ</a>
+        <div class="sidebar" id="sidebar">
+            <a href="#home">HOME</a>
+            <a href="#about">ABOUT</a>
+            <a href="#recruitment">RECRUITMENT</a>
+            <a href="#FAQ">FAQ</a>
+        </div>
+
+    <div class = "navbar">
+        <div class = "left">
+            <img src="assets/image.png" alt="logo">
+        </div>
+
+        <div class = "right">
+            <a href="#home">HOME</a>
+            <a href="#about">ABOUT US</a>
+            <a href="#recruitment">RECRUITMENT</a>
+            <a href="#faq">FAQ</a>
+        </div>
+
     </div>
-    <!-- Navbar -->
-    <div class="top">
-        <div class="navbar">
-            <div class="left">
-                <img src="https://github.com/busepol/dartweb/blob/main/logo.png?raw=true" alt="logo">
-            </div>
-            <div class="right">
-                <a href="#home">HOME</a>
-                <a href="#about">ABOUT US</a>
-                <a href="#recruitment">RECRUITMENT</a>
-                <a href="#faq">FAQ</a>
-            </div>
+
+    
+    <div class="middle">
+        <div class="intro">
+            <h1>Welcome to Our FAQ Page</h1>
+            <p class="spacer"></p>
+            <p>Find answers to the most commonly asked questions below. If you don’t see what you’re looking for, feel free to reach out!</p>
+        </div>
+
+        <div class = "questions">
+            <div class="total">
+                <div class="question">
+                     <p>WHAT EXACTLY DO YOU USE AI FOR?</p>
+                     <div class="button" onclick="toggleAnswer(this)"> 
+                        <img src="Chevron Down.png" alt="chevron_down">
+                     </div>
+                 </div>
+                 <div class="answer">
+                     <p>AI will be used at <strong>all stages of project development,</strong> some more than others. <strong>Specifically,</strong> it will assist in writing storylines and scripts, creating storyboards, drafting production schedules, charts, budgets, and various tables. <strong> Where possible, it will also </strong>contribute to creating visual effects. <strong> In essence,</strong> we’ll use it in both organizational and creative fields.</p>
+                 </div>
+             </div>
+    
+            <div class="total">
+                <div class="question">
+                     <p>CAN I JOIN THE TEAM EVEN IF I HAVE NO EXPERIENCE?</p>
+                     <div class="button" onclick="toggleAnswer(this)"> 
+                        <img src="Chevron Down.png" alt="chevron_down">
+                     </div>
+                 </div>
+                 <div class="answer">
+                     <p><strong>Absolutely!</strong> All that matters to us is <strong>commitment, participation, and a willingness</strong> to get involved. Whether you’re a freshman or a veteran, there’s a place for you on the team if you’re ready to <strong>collaborate and continuously learn.</strong></p>
+                 </div>
+             </div>
+    
+             <div class="total">
+                <div class="question">
+                     <p>HOW LONG DOES A TYPICAL PROJECT TAKE?</p>
+                     <div class="button" onclick="toggleAnswer(this)"> 
+                        <img src="Chevron Down.png" alt="chevron_down">
+                     </div>
+                 </div>
+                 <div class="answer">
+                     <p>Project <strong>duration varies</strong> depending on complexity and scale. A small project might take a few weeks, while larger ones can span several months.<strong> We prioritize quality and teamwork </strong>to ensure each project is completed efficiently.</p>
+                 </div>
+             </div>
+    
+             <div class="total">
+                <div class="question">
+                     <p>DO I NEED ANY SPECIAL SOFTWARE TO PARTICIPATE?</p>
+                     <div class="button" onclick="toggleAnswer(this)"> 
+                        <img src="Chevron Down.png" alt="chevron_down">
+                     </div>
+                 </div>
+                 <div class="answer">
+                     <p><strong>Not necessarily!</strong> While having experience with certain tools can help, we’ll guide you through the software we use and provide resources to help you get started. All you need is a computer and an internet connection to contribute.</p>
+                 </div>
+             </div>
+        </div>
+
+        <div class="ending">
+            <p>Still Have Questions?</p>
+            <p>We’re here to help! Connect with us through our social media platforms listed below. </p>
         </div>
     </div>
-    <main>
-        <div class="faq-container">
-            <section class="intro">
-                <h1>Welcome to Our FAQ Page</h1>
-                <p class="spacer"></p>
-                <p>Find answers to the most commonly asked questions below. If you don’t see what you’re looking for, feel free to reach out!</p>
-            </section>
 
-            <p class="spacer1"></p>
-
-            <section class="fade-in">
-            <!-- First Row -->
-            <div class="faq-row">
-                <!-- First Question -->
-                <div class="faq-item">
-                    <div class="question">
-                        <h2><span>WHAT EXACTLY </span> <br/> 
-                            <span>DO YOU USE </span><br/>
-                            <span>AI FOR? </span> </h2>
-                        <div class="icon" onclick="toggleAnswer(this)">
-                            <img src="https://github.com/busepol/dartweb/blob/main/robot.jpeg?raw=true" alt="expand icon" class="toggle-btn">
-                        </div>
-                    </div>
-                    <div class="answer">
-                        <p class="spacer"></p>
-                        <p>AI will be used at <strong>all stages of project development,</strong> some more than others. <strong>Specifically,</strong> it will assist in writing storylines and scripts, creating storyboards, drafting production schedules, charts, budgets, and various tables. <strong> Where possible, it will also </strong>contribute to creating visual effects. <strong> In essence,</strong> we’ll use it in both organizational and creative fields.</p>
-                    </div>
-                </div>
-                <!-- Second Question -->
-                <div class="faq-item">
-                    <div class="question">
-                        <h2><span>CAN I JOIN THE TEAM </span> <br/>
-                            <span>EVEN  IF I HAVE NO </span><br/>
-                            <span>EXPERIENCE?</span></h2>
-                        <div class="icon" onclick="toggleAnswer(this)">
-                            <img src="https://github.com/busepol/dartweb/blob/main/fotoicon.jpeg?raw=true" alt="expand icon" class="toggle-btn">
-                        </div>
-                    </div>
-                    <div class="answer">
-                        <p class="spacer"></p>
-                        <p><strong>Absolutely!</strong> All that matters to us is <strong>commitment, participation, and a willingness</strong> to get involved. Whether you’re a freshman or a veteran, there’s a place for you on the team if you’re ready to <strong>collaborate and continuously learn.</strong></p>
-                    </div>
-                </div>
-            </div>
-            </section>
-
-            <p class="spacer1"></p>
-            
-            <section class="fade-in">
-            <!-- Second Row -->
-            <div class="faq-row">  
-                <!-- Third Question -->
-                <div class="faq-item">
-                    <div class="question">
-                        <h2><span>HOW LONG DOES</span><br/> 
-                            <span>A TYPICAL PROJECT</span><br/>
-                            <span>TAKE?</span> </h2>
-                        <div class="icon" onclick="toggleAnswer(this)">
-                            <img src="https://github.com/busepol/dartweb/blob/main/compicon.jpeg?raw=true" alt="expand icon" class="toggle-btn">
-                        </div>
-                    </div>
-                    <div class="answer">
-                        <p class="spacer"></p>
-                        <p>Project <strong>duration varies</strong> depending on complexity and scale. A small project might take a few weeks, while larger ones can span several months.<strong> We prioritize quality and teamwork </strong>to ensure each project is completed efficiently.</p>
-                    </div>
-                </div>
-                <!-- Fourth Question -->
-                <div class="faq-item">
-                    <div class="question">
-                        <h2><span>DO I NEED ANY</span><br/>
-                            <span>SPECIAL SOFTWARE</span><br/>
-                            <span>TO PARTICIPATE?</span></h2>
-                        <div class="icon" onclick="toggleAnswer(this)">
-                            <img src="https://github.com/busepol/dartweb/blob/main/sofwareicon.jpeg?raw=true" alt="expand icon" class="toggle-btn">
-                        </div>
-                    </div>
-                    <div class="answer">
-                        <p class="spacer"></p>
-                        <p><strong>Not necessarily!</strong> While having experience with certain tools can help, we’ll guide you through the software we use and provide resources to help you get started. All you need is a computer and an internet connection to contribute.</p>
-                    </div>
-                </div>
-            </div>
-            </section>
-
-            <section class="ending">
-                <h2>Still Have Questions?</h2>
-                <p class="spacer"></p>
-                <p>We’re here to help! Connect with us through our social media platforms listed below. </p>
-            </section>
-            </div>
+    <div class ="bottom">
+        <div class ="icons">
+            <a href="https://www.instagram.com/dart.productions/" target="_blank">
+                <img src="assets/instagram.png" alt="instagram">
+            </a>
+            <a href="" target="_blank">
+                <img src="assets/linkedn.png" alt="linkedn">
+            </a>
+            <a href="https://t.me/politodart" target="_blank">
+                <img src="assets/telegram.png" alt="telegram">
+            </a>
         </div>
-    </main>
-
-    <div class ="icons">
-        <a href="https://www.instagram.com/dart.productions/" target="_blank">
-            <img src="https://github.com/busepol/dartweb/blob/main/insta_logo.png?raw=true" alt="instagram">
-        </a>
-        <a href="" target="_blank">
-            <img src="https://github.com/busepol/dartweb/blob/main/linkedin_logo.png?raw=true" alt="linkedn">
-        </a>
-        <a href="https://t.me/politodart" target="_blank">
-            <img src="https://github.com/busepol/dartweb/blob/main/telegram_logo.png?raw=true" alt="telegram">
-        </a>
+        <span class ="copyright">© 2024 D.A.R.T. All rights reserved.</span>
     </div>
-    <span class ="copyright">© 2024 D.A.R.T. All rights reserved.</span>
-
-    <script src="faq.js"></script> 
+    <script src="faq.js"></script>
 </body>
 </html>

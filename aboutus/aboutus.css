@@ -155,6 +155,10 @@
 
   }
 
+  .section1 img{
+    mix-blend-mode: hard-light;
+  }
+
   .line{
     margin-bottom: 9rem;
       display: flex;

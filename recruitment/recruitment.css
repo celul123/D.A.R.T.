@@ -402,6 +402,10 @@ a{
     font-size: 1rem;
   }
 
+  .explanation:hover{
+    font-size: 1rem;
+  }
+
   .explanation{
     font-size: 1rem;
   }

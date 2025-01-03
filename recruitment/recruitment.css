@@ -273,9 +273,7 @@ a{
 
 
 @media (max-width: 1200px) {
-    body {
-      font-size: 80%; 
-    }
+   
 
     .overlay {
       position: fixed;
@@ -315,11 +313,10 @@ a{
    }
   
     .questions {
-      padding-top: 2rem;
-      padding-bottom: 2rem;
-      font-size: 1rem;
-      margin-left: 1.5rem;
-      margin-right: 1.5rem;
+     font-size: 1.3rem;
+      padding-top: 5rem;
+      margin-left: 3rem;
+      margin-right: 3rem;
       max-width: 85%;
     }
   
@@ -332,7 +329,7 @@ a{
   
     .p1,
     .p2 {
-      font-size: 1rem;
+      font-size: 1.3rem;
       max-width: 85%; 
       margin-left: auto;
       margin-right: auto;
@@ -394,6 +391,21 @@ a{
 
 @media (max-width: 768px) {
 
+  .questions{
+    font-size: 1rem;
+    margin-right: 2rem;
+    margin-left: 2rem;
+    padding-top: 3rem;
+  }
+
+  .explanation1{
+    font-size: 1rem;
+  }
+
+  .explanation{
+    font-size: 1rem;
+  }
+
   .icons {
       flex-direction: row; 
       gap: 1rem;
@@ -401,11 +413,13 @@ a{
       padding-bottom: 1rem;
     }
 
- 
+    .p1, .p2{
+      font-size: 1rem;
+    }
 
   .bottom{
     padding-top: 3rem;
-    padding-bottom: 3rem;
+    padding-bottom: 0.5rem;
   }
 
 

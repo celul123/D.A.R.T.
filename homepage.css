@@ -412,39 +412,44 @@ body{
   }
 
   .intro {
-    padding: 5rem 2rem;
+    padding: 5rem 3rem;
     gap: 2rem;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
   }
 
   .cards {
     flex-direction: column;
     gap: 2rem;
-    padding: 5rem 2rem;
+    padding: 5rem 3rem;
+    align-items: normal;
   }
 
   .card {
     max-width: 100%;
   }
 
+  .card p{
+    font-size: 1.3rem;
+  }
+
   .join_us h1 {
-    font-size: 3 rem;
+    font-size: 3rem;
   }
 
   .join_us p {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
   }
 
   .join_us a {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
   }
 
   .join_us a:hover{
-    font-size: 1.5rem;
+    font-size: 1.3rem;
   }
 
   .join_us{
-    padding: 5rem 2rem;
+    padding: 5rem 3rem;
    
   }
 
@@ -501,6 +506,7 @@ body{
   .intro {
     font-size: 1rem;
     gap: 1rem;
+    padding: 5rem 2rem;
   }
 
   .intro a {
@@ -546,4 +552,11 @@ body{
     padding-bottom: 1rem;
   }
 
+  .cards{
+    padding: 5rem 2rem;
+  }
+
+  .join_us{
+    padding: 5rem 2rem;
+  }
 }

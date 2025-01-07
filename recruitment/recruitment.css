@@ -62,7 +62,12 @@ body{
     animation-name: slideUp;
     animation-delay: 1s;
     animation-duration: 2s;
-    font-weight: 500;
+    font-weight: 400;
+}
+
+strong{
+  color: #FFCC6D;
+  font-weight: 400;
 }
 
 

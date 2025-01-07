@@ -426,5 +426,9 @@ a{
     padding-bottom: 0.5rem;
   }
 
+  .name{
+    text-align: center;
+  }
+
 
 }

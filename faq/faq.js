@@ -22,14 +22,17 @@ body.addEventListener('click', function(event) {
 
 });
 
-function toggleAnswer(button) {
-    const totalDiv = button.closest('.total'); 
+function toggleAnswer(questionDiv) {
+    const totalDiv = questionDiv.closest('.total'); 
     const answer = totalDiv.querySelector('.answer'); 
+    const chevron = questionDiv.querySelector("img[data-chevron]");
 
     if (answer.classList.contains("open")) {
         answer.classList.remove("open"); 
+        chevron.style.transform = "rotate(0deg)";
     } else {
         answer.classList.add("open"); 
+        chevron.style.transform = "rotate(180deg)";
     }
 
 }

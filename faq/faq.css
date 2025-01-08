@@ -337,6 +337,10 @@
     }
 
   @media (max-width: 768px) {
+
+    .middle{
+      margin-top: 0.8rem;
+    }
     .intro .title {
       font-size: 2.5rem;
       
@@ -364,7 +368,7 @@
    }
 
   .answer{
-    font-size: 0.8rem;
+    font-size: 0.9rem;
   }
 
   .ending{

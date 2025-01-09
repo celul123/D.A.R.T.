@@ -22,3 +22,7 @@ This website was built using:
 1. Visit the website at: [D.A.R.T. Website](https://celul123.github.io/D.A.R.T./)
 2. Navigate through the sections using the menu.
 3. Fill out the contact form if you'd like to join or learn more about the team.
+
+## License
+This project is licensed under the [MIT License](LICENSE).
+
